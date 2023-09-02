@@ -18,6 +18,19 @@ This repository contains API documentation for Triveous E-commerce-backend
   ```` javascript
   GET https://kind-lime-bass-tam.cyclic.app
   ````
+  ## User
+
+  #### Signup
+  ```` javascript
+  POST https://kind-lime-bass-tam.cyclic.app/signUp
+  ````
+  {
+    name: string (required),
+    email: demoo@gmail.com in email format (required),
+    password: 123456,
+    role: (admin seller or default customer)
+  }
+  
 
 
 
