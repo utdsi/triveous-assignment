@@ -57,7 +57,7 @@ This repository contains API documentation for Triveous E-commerce-backend
 ```` javascript
   POST https://kind-lime-bass-tam.cyclic.app/logout
   ````
-````javascript
+
 
 ```` javascript
 res.status(200).send({ msg: "logout successfull" });
@@ -75,6 +75,89 @@ Role:Admin
 res.status(204).send({ "msg": "user has been deleted" })
 res.status(500).send({ msg: "something went wrong" });
 ````
+
+## Product
+#### Add Product
+```` javascript
+  POST https://kind-lime-bass-tam.cyclic.app/addProducts
+  ````
+```` javascript
+  {
+ title:string (required)
+ category:string (required)
+ description:string (required)
+ price:Number (required)
+ category:String
+}
+
+  ````
+Role: seller
+
+```` javascript
+return res.status(201).send({ msg: "product addedd successfully" })
+res.status(500).send({ msg: "something went wrong try again " })
+````
+#### GetProduct By Category
+```` javascript
+  GET https://kind-lime-bass-tam.cyclic.app/getProductsByCategory
+  ````
+
+
+  
+
+```` javascript
+res.status(200).send({ products: products })
+res.status(500).send({ msg: "something went wrong try again " })
+````
+
+#### GetProduct By id
+```` javascript
+  GET https://kind-lime-bass-tam.cyclic.app/getproductById
+  ````
+
+
+  
+
+```` javascript
+res.status(200).send({ products: products })
+res.status(500).send({ msg: "something went wrong try again " })
+````
+
+#### Remove Product
+
+```` javascript
+  DELETE https://kind-lime-bass-tam.cyclic.app/RemoveProducts
+  ````
+
+
+  
+
+```` javascript
+res.status(201).send({ msg: " Product has been removed" });
+res.status(500).send({ msg: "something went wrong try again " })
+````
+
+#### Update Product
+
+```` javascript
+  PATCH https://kind-lime-bass-tam.cyclic.app/updateProducts
+  ````
+
+
+  
+
+```` javascript
+res.status(201).send({ msg: " Product has been updated" });
+res.status(500).send({ msg: "something went wrong try again " })
+````
+
+
+
+
+
+
+
+
 
 
 
