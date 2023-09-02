@@ -11,4 +11,9 @@ This repository contains API documentation for Triveous E-commerce-backend
 <img src="https://user-images.githubusercontent.com/25181517/121401671-49102800-c959-11eb-9f6f-74d49a5e1774.png" alt="npm" width="50" height="50"/>
   
 </p>
+## API Endpoints
+   #### Home
+   ```` javascript
+   GET https://kind-lime-bass-tam.cyclic.app
+   ````
  
