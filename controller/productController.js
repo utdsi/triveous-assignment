@@ -15,7 +15,7 @@ const addProducts = async (req, res) => {
         return res.status(201).send({ msg: "product addedd successfully" })
 
     } catch (err) {
-        res.status(500).send({ msg: "something went wrong try again hj" })
+        res.status(500).send({ msg: "something went wrong try again " })
     }
 }
 
@@ -32,7 +32,7 @@ const getProductsByCategory = async (req, res) => {
 
 
     } catch (err) {
-        res.status(500).send({ msg: "something went wrong try again hj" })
+        res.status(500).send({ msg: "something went wrong try again " })
     }
 }
 
@@ -40,7 +40,7 @@ const getproductById = async (req, res) => {
     try {
         const productId = req.params.productId
         const product = await ProductModel.findById({ _id: productId })
-        //console.log(productId, "prooooo")
+        
         res.status(200).send({ product: product })
 
     } catch (err) {
@@ -56,7 +56,7 @@ const RemoveProducts = async (req, res) => {
             { _id: ProductId },
             { availability: true }
         );
-        res.status(201).send({ msg: "particular Product has been removed" });
+        res.status(201).send({ msg: " Product has been removed" });
     } catch (error) {
         console.log("error", error);
         res.status(500).send(error);
@@ -71,7 +71,7 @@ const updateProducts = async (req, res) => {
         const id = req.params.id
         await FlightModel.findByIdAndUpdate({ _id: id }, payload)
 
-        return res.status(201).send({ msg: "particular Product has been updated" });
+        return res.status(201).send({ msg: "Product has been updated" });
 
 
 

@@ -38,7 +38,7 @@ const GetparticularUserHistory = async (req, res) => {
             userId: Userid,
             status: "placed"
         })
-        //console.log(UserOrderHistory)
+        
         if (!UserOrderHistory.length) {
             return res.status(404).send({ "msg": "Did not placed any order" })
         }

@@ -78,9 +78,9 @@ const logout = async (req, res) => {
         let blacklistAcc = JSON.parse(fs.readFileSync("./blacklist.json", "utf-8"));
         blacklistAcc.push(token);
         fs.writeFileSync("./blacklist.json", JSON.stringify(blacklistAcc));
-        res.send({ msg: "logout successfull" });
+        res.status(200).send({ msg: "logout successfull" });
     } catch (error) {
-        res.send({ msg: "something went wrong" });
+        res.status(500).send({ msg: "something went wrong" });
     }
 }
 
