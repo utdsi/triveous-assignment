@@ -13,6 +13,8 @@ This repository contains API documentation for Triveous E-commerce-backend
 </p>
 # API-Endpoints
 
+# Tech-Stack-Used
+
 
 
 
