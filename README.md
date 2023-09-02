@@ -32,6 +32,55 @@ This repository contains API documentation for Triveous E-commerce-backend
     role: (admin seller or default customer)
   }
 ````
+```` javascript
+200 (Ok): { msg: "user already exist" }
+201 (ok): { msg: "signup has been done"}
+````
+
+#### Login
+```` javascript
+  POST https://kind-lime-bass-tam.cyclic.app/logIn
+  ````
+````javascript
+  {
+    
+    email: demoo@gmail.com in email format (required),
+    password: 123456,
+    
+  }
+````
+```` javascript
+200 (Ok): { msg: "login successful", token }
+401 (account does not exists): {msg: 'user not found'  }
+````
+#### Logout
+```` javascript
+  POST https://kind-lime-bass-tam.cyclic.app/logout
+  ````
+````javascript
+
+```` javascript
+res.status(200).send({ msg: "logout successfull" });
+res.status(500).send({ msg: "something went wrong" });
+````
+#### Delete user
+
+```` javascript
+  Delete https://kind-lime-bass-tam.cyclic.app/user
+  ````
+
+Role:Admin
+
+```` javascript
+res.status(204).send({ "msg": "user has been deleted" })
+res.status(500).send({ msg: "something went wrong" });
+````
+
+
+
+
+
+
   
 
 
