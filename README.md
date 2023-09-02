@@ -151,6 +151,120 @@ res.status(201).send({ msg: " Product has been updated" });
 res.status(500).send({ msg: "something went wrong try again " })
 ````
 
+## Cart
+#### Add to Cart
+```` javascript
+  POST https://kind-lime-bass-tam.cyclic.app/AddToCart
+  ````
+
+
+
+  
+
+```` javascript
+  res.status(204).send({ "msg": "product already exist in your cart" })
+res.status(500).send({ msg: "something went wrong try again " })
+res.status(201).send({ msg: "product has been added in cart" });
+````
+
+#### Remove From Cart
+
+```` javascript
+  DELETE https://kind-lime-bass-tam.cyclic.app/RemoveFromCart
+  ````
+
+
+
+  
+
+```` javascript
+  res.status(204).send({ msg: "product has been removed from cart" });
+res.status(500).send({ msg: "something went wrong try again " })
+
+````
+
+#### Update Cart Product 
+```` javascript
+  PATCH https://kind-lime-bass-tam.cyclic.app/UpdateCartProduct 
+  ````
+
+
+
+  
+
+```` javascript
+  res.status(204).send({ msg: "product has been updated in cart" });
+res.status(500).send({ msg: "something went wrong try again " })
+
+````
+
+#### Get Cart Products
+
+```` javascript
+  GET https://kind-lime-bass-tam.cyclic.app/GetCartProducts
+  ````
+
+
+
+  
+
+```` javascript
+  res.status(200).send(AllCartProducts);
+res.status(500).send({ msg: "something went wrong try again " })
+
+````
+
+## Order
+#### Order place
+```` javascript
+  POST https://kind-lime-bass-tam.cyclic.app/Orderplaced
+  ````
+
+
+
+  
+
+```` javascript
+  res.status(201).send({ "msg": "order has been placed" })
+res.status(500).send({ msg: "something went wrong try again " })
+
+````
+
+#### Get All Order History
+```` javascript
+  GET https://kind-lime-bass-tam.cyclic.app/GetAllOrderHistory
+  ````
+
+
+
+  
+
+```` javascript
+  res.status(200).send(AllOrderProducts)
+res.status(500).send({ msg: "something went wrong try again " })
+
+````
+
+#### Get User History
+```` javascript
+  GET https://kind-lime-bass-tam.cyclic.app/GetparticularUserHistory
+  ````
+
+
+
+  
+
+```` javascript
+  res.status(200).send(UserOrderHistory)
+res.status(500).send({ msg: "something went wrong try again " })
+ res.status(404).send({ "msg": "Did not placed any order" })
+
+````
+
+
+
+
+
 
 
 
