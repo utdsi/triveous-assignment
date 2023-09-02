@@ -162,7 +162,7 @@ res.status(500).send({ msg: "something went wrong try again " })
   
 
 ```` javascript
-  res.status(204).send({ "msg": "product already exist in your cart" })
+res.status(204).send({ "msg": "product already exist in your cart" })
 res.status(500).send({ msg: "something went wrong try again " })
 res.status(201).send({ msg: "product has been added in cart" });
 ````
@@ -178,7 +178,7 @@ res.status(201).send({ msg: "product has been added in cart" });
   
 
 ```` javascript
-  res.status(204).send({ msg: "product has been removed from cart" });
+res.status(204).send({ msg: "product has been removed from cart" });
 res.status(500).send({ msg: "something went wrong try again " })
 
 ````
@@ -193,7 +193,7 @@ res.status(500).send({ msg: "something went wrong try again " })
   
 
 ```` javascript
-  res.status(204).send({ msg: "product has been updated in cart" });
+res.status(204).send({ msg: "product has been updated in cart" });
 res.status(500).send({ msg: "something went wrong try again " })
 
 ````
@@ -209,7 +209,7 @@ res.status(500).send({ msg: "something went wrong try again " })
   
 
 ```` javascript
-  res.status(200).send(AllCartProducts);
+res.status(200).send(AllCartProducts);
 res.status(500).send({ msg: "something went wrong try again " })
 
 ````
@@ -225,7 +225,7 @@ res.status(500).send({ msg: "something went wrong try again " })
   
 
 ```` javascript
-  res.status(201).send({ "msg": "order has been placed" })
+res.status(201).send({ "msg": "order has been placed" })
 res.status(500).send({ msg: "something went wrong try again " })
 
 ````
@@ -240,7 +240,7 @@ res.status(500).send({ msg: "something went wrong try again " })
   
 
 ```` javascript
-  res.status(200).send(AllOrderProducts)
+res.status(200).send(AllOrderProducts)
 res.status(500).send({ msg: "something went wrong try again " })
 
 ````
@@ -255,9 +255,9 @@ res.status(500).send({ msg: "something went wrong try again " })
   
 
 ```` javascript
-  res.status(200).send(UserOrderHistory)
+res.status(200).send(UserOrderHistory)
 res.status(500).send({ msg: "something went wrong try again " })
- res.status(404).send({ "msg": "Did not placed any order" })
+res.status(404).send({ "msg": "Did not placed any order" })
 
 ````
 
